@@ -101,6 +101,72 @@ const heading = React.createElement(
 );
 // this will take three parameters
 
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+const jsxHeading = <h1>Hello JSX</h1>
+
+// Component
+// const Title = () =>(
+//   <div>
+//   <h1>Hello from Title</h1>
+//   </div>
+// )
+
+
+// const HeadingComponent = () =>(
+//   <div id="container">
+//     <Title />
+//     <h1 className="Heading">Namaste Heading</h1>
+//   </div>
+// );
+
+
+
+// Creating a component composition 
+
+// const ParaComponent= () =>{
+//   return <div>
+//     <h1>Hi from para</h1>
+//   </div>
+// }
+
+
+// const Header = () =>{
+//   return <div>
+//     <ParaComponent/>
+//     <h1>This is from header</h1>
+//   </div>
+// }
+
+
+// React Element in component
+const para= (
+  <div>
+    <h1>Hi from para Eleemtn</h1>
+  </div>
+)
+
+
+const Header = () =>{
+  return <div>
+    {para}
+    <h1>This is from header</h1>
+  </div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+root.render(<Header/>);

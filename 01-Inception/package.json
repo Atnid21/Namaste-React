@@ -2,8 +2,9 @@
   "name": "01-inception",
   "version": "1.0.0",
   "description": "This is located in inception",
-  "main": "App.js",
   "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "repository": {
